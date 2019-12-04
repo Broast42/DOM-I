@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//nav bar changes
 const links = document.querySelectorAll('a');
 links[0].textContent = siteContent["nav"]["nav-item-1"];
 links[1].textContent = siteContent["nav"]["nav-item-2"];
@@ -49,6 +50,7 @@ links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
 
+//cta changes
 const heading = document.querySelector('.cta-text h1');
 heading.textContent = siteContent["cta"]["h1"];
 
@@ -58,6 +60,7 @@ button.textContent = siteContent["cta"]["button"];
 const topImg = document.getElementById("cta-img");
 topImg.src = siteContent["cta"]["img-src"];
 
+//main-content changes
 const h4all = document.querySelectorAll('.text-content h4');
 h4all[0].textContent = siteContent["main-content"]["features-h4"];
 h4all[1].textContent = siteContent["main-content"]["about-h4"];
@@ -75,6 +78,7 @@ mainP[4].textContent = siteContent["main-content"]["vision-content"];
 const midImg = document.getElementById("middle-img");
 midImg.src = siteContent["main-content"]["middle-img-src"];
 
+//contact section changes
 const contactH4 = document.querySelector(".contact h4");
 contactH4.textContent = siteContent["contact"]["contact-h4"];
 
@@ -83,13 +87,16 @@ contactAllP[0].textContent = siteContent["contact"]["address"];
 contactAllP[1].textContent = siteContent["contact"]["phone"];
 contactAllP[2].textContent = siteContent["contact"]["email"];
 
+//footer changes
 const footerP = document.querySelector("footer p");
 footerP.textContent = siteContent["footer"]["copyright"];
 
+//change nav links to green
 links.forEach(i => {
   i.style.color = "green";
 });
 
+//add new links to beginning and end of nav bar
 const firstNewLink = document.createElement('a');
 firstNewLink.textContent = "Last";
 firstNewLink.style.color = "green";
@@ -107,6 +114,7 @@ navBar.prepend(secondNewLink);
 const contactW = document.querySelector(".contact");
 contactW.style.width = "150px";
 
+//style changes for stretch goals
 const contain = document.querySelector(".container")
 contain.style.background = "dodgerblue";
 
