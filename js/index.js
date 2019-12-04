@@ -85,3 +85,26 @@ contactAllP[2].textContent = siteContent["contact"]["email"];
 
 const footerP = document.querySelector("footer p");
 footerP.textContent = siteContent["footer"]["copyright"];
+
+links.forEach(i => {
+  i.style.color = "green";
+});
+
+const firstNewLink = document.createElement('a');
+firstNewLink.textContent = "Last";
+firstNewLink.style.color = "green";
+
+const secondNewLink = document.createElement('a');
+secondNewLink.textContent = "First";
+secondNewLink.style.color = "green";
+
+const navBar = document.querySelector("nav");
+
+navBar.append(firstNewLink);
+navBar.prepend(secondNewLink);
+
+//change with of contact section to break address into two lines
+const contactW = document.querySelector(".contact");
+contactW.style.width = "150px";
+
+
