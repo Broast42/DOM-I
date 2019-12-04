@@ -107,4 +107,30 @@ navBar.prepend(secondNewLink);
 const contactW = document.querySelector(".contact");
 contactW.style.width = "150px";
 
+const contain = document.querySelector(".container")
+contain.style.background = "dodgerblue";
+
+sections = document.querySelectorAll('section');
+
+sections.forEach(i =>{
+  i.style.padding = "10px";
+});
+
+midImg.style.width = "100%";
+
+const header = document.querySelector("header");
+
+header.style.background = "white";
+header.style.padding = "5px";
+header.style.border = "2px solid black";
+header.style.marginTop = "5px";
+header.style.borderRadius = "0 0 20px 20px";
+
+navBar.style.justifyContent = "space-around";
+
+heading.style.textShadow = "6px 6px 2px gray";
+
+
+
+
 
