@@ -49,8 +49,28 @@ links[3].textContent = siteContent["nav"]["nav-item-4"];
 links[4].textContent = siteContent["nav"]["nav-item-5"];
 links[5].textContent = siteContent["nav"]["nav-item-6"];
 
-let heading = document.querySelector('.cta-text h1');
+const heading = document.querySelector('.cta-text h1');
 heading.textContent = siteContent["cta"]["h1"];
 
-let button = document.querySelector(".cya-text button");
+const button = document.querySelector(".cta-text button");
 button.textContent = siteContent["cta"]["button"];
+
+const topImg = document.getElementById("cta-img");
+topImg.src = siteContent["cta"]["img-src"];
+
+const h4all = document.querySelectorAll('.text-content h4');
+h4all[0].textContent = siteContent["main-content"]["features-h4"];
+h4all[1].textContent = siteContent["main-content"]["about-h4"];
+h4all[2].textContent = siteContent["main-content"]["services-h4"];
+h4all[3].textContent = siteContent["main-content"]["product-h4"];
+h4all[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainP = document.querySelectorAll('.text-content p');
+mainP[0].textContent = siteContent["main-content"]["features-content"];
+mainP[1].textContent = siteContent["main-content"]["about-content"];
+mainP[2].textContent = siteContent["main-content"]["services-content"];
+mainP[3].textContent = siteContent["main-content"]["product-content"];
+mainP[4].textContent = siteContent["main-content"]["vision-content"];
+
+const midImg = document.getElementById("middle-img");
+midImg.src = siteContent["main-content"]["middle-img-src"];
