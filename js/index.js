@@ -46,8 +46,7 @@ const links = document.querySelectorAll('a');
 //nav bar changes with loop
 links.forEach((x,i)=>{
   let newI = i + 1;
-  let navItem = "nav-item-" + newI;
-  console.log(navItem); 
+  let navItem = "nav-item-" + newI; 
   x.textContent = siteContent["nav"][navItem];
 });
 
@@ -149,7 +148,18 @@ navBar.style.justifyContent = "space-around";
 
 heading.style.textShadow = "6px 6px 2px gray";
 
+//press the button and change h1's text and color 
+button.addEventListener("click", changeText);
 
+function changeText(){
+  heading.textContent = "DOM is Super Awesome!";
+  if(heading.style.color === "white"){
+    heading.style.color = "black";
+  }else{
+    heading.style.color = "white";
+  }
+  
+}
 
 
 
