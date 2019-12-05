@@ -9,6 +9,16 @@ secOne.textContent = "0";
 msHun.textContent = "0";
 msTen.textContent = "0";
 
+const bdy = document.querySelector("body");
+const newButton = document.createElement("button");
+newButton.addEventListener("click", countUp);
+newButton.textContent = "Start Timer";
+newButton.style.marginLeft = "50px";
+
+bdy.append(newButton);
+
+
+
 
 function countUp(){
     let counter = setInterval(countFn, 10);
@@ -36,4 +46,6 @@ function countUp(){
     }
 }
 
-countUp();
+
+
+
